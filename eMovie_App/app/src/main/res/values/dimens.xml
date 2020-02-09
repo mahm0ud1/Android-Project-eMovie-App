@@ -1,0 +1,31 @@
+<resources>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <!-- Chair Layout -->
+    <dimen name="rightChairs_layout_marginLeft">34dp</dimen>
+    <dimen name="leftChair_layout_marginLeft">15dp</dimen>
+    <dimen name="chair_layout_marginTop_left">2dp</dimen>
+    <dimen name="chair_layout_width">30dp</dimen>
+    <dimen name="chair_layout_height">30dp</dimen>
+    <dimen name="chair_text_size">12dp</dimen>
+    <!-- Left TextView Layout -->
+    <dimen name="left_TextView_layout_width">15dp</dimen>
+    <dimen name="left_TextView_layout_height">20dp</dimen>
+    <!-- Right TextView Layout -->
+    <dimen name="right_TextView_layout_width">15dp</dimen>
+    <dimen name="right_TextView_layout_height">20dp</dimen>
+    <dimen name="right_TextView_layout_marginLeft">15dp</dimen>
+    <!-- Buttons Layout -->
+    <dimen name="button_layout_width">100dp</dimen>
+    <dimen name="button_layout_height">40dp</dimen>
+    <dimen name="button_Text_size">20dp</dimen>
+    <dimen name="backBtn_layout_marginLeft">140dp</dimen>
+    <dimen name="nextBtn_layout_marginLeft">40dp</dimen>
+    <!-- Details Layouts -->
+    <dimen name="Details_layout_height">50dp</dimen>
+    <dimen name="Details_layout_marginTop">20dp</dimen>
+    <dimen name="Details_layout_marginRight">10dp</dimen>
+    <dimen name="Details_layout_marginLeft">10dp</dimen>
+    <dimen name="chair_Line_layout_marginTop">8dp</dimen>
+</resources>

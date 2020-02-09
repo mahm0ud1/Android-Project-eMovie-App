@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="available_chair_color">#32cd32</color>
+    <color name="reserved_chair_color">@android:color/darker_gray</color>
+    <color name="chosen_chair_color">#FFFF0000</color>
+    <color name="back_Button_color">@android:color/darker_gray</color>
+    <color name="next_Button_color">#FFFF0000</color>
+    <color name="cancel_btn">#FFFF0000</color>
+    <color name="text_color">@android:color/black</color>
+    <color name="rowBg">#E4E4E4</color>
+    <color name="movieTitle">#797979</color>
+    <color name="yearTitle">#CC8BDA</color>
+    <color name="rateTitle">#CFC767</color>
+
+</resources>

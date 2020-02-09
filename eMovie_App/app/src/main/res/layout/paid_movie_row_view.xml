@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10px">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/rowBg">
+
+        <TextView
+            android:id="@+id/movie_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/movieImg"
+            android:layout_margin="10px"
+            android:layout_width="90dp"
+            android:layout_height="125dp"
+            android:src="@drawable/no_img"
+            android:scaleType="fitXY"/>
+        <RelativeLayout
+            android:id="@+id/movieDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/movieImg">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/movieTitle"
+                android:text="Title: Not_Set"
+                android:layout_margin="10px"
+                android:textColor="@color/movieTitle"
+                android:textSize="18sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Year: Not_Set"
+                android:id="@+id/yearMovie"
+                android:layout_below="@id/movieTitle"
+                android:textColor="@color/yearTitle"
+                android:textSize="16sp"
+                android:layout_margin="10px"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Genres: Not_Set"
+                android:id="@+id/genresMovie"
+                android:layout_margin="10px"
+                android:textSize="16sp"
+                android:textColor="@color/movieTitle"
+                android:layout_below="@id/yearMovie"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/cancel_btn"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginRight="19dp"
+            android:onClick="Cancel_Ticket"
+            android:text="@android:string/cancel" />
+
+        <Button
+            android:id="@+id/Display_Code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginRight="19dp"
+            android:onClick="Open_Ticket"
+            android:text="Open" />
+    </RelativeLayout>
+</RelativeLayout>

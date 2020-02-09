@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerDetails"
+    android:background="@android:color/darker_gray">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/toolbar"
+            android:id="@+id/customer_toolbar">
+        </include>
+
+    <!-- Customer Details Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <!-- First Name -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/Details_layout_height"
+            android:layout_marginTop="@dimen/Details_layout_marginTop"
+            android:layout_marginLeft="@dimen/Details_layout_marginLeft"
+            android:layout_marginRight="@dimen/Details_layout_marginRight"
+            android:background="@android:color/background_light"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/customer_First_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/First_Name"
+                android:textColor="@color/text_color"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Last Name -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/Details_layout_height"
+            android:layout_marginTop="@dimen/Details_layout_marginTop"
+            android:layout_marginLeft="@dimen/Details_layout_marginLeft"
+            android:layout_marginRight="@dimen/Details_layout_marginRight"
+            android:background="@android:color/background_light"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/customer_Last_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Last_Name"
+                android:textColor="@color/text_color"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Phone Number -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/Details_layout_height"
+            android:layout_marginTop="@dimen/Details_layout_marginTop"
+            android:layout_marginLeft="@dimen/Details_layout_marginLeft"
+            android:layout_marginRight="@dimen/Details_layout_marginRight"
+            android:background="@android:color/background_light"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/customer_phone_Number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Phone_Number"
+                android:inputType="phone"
+                android:textColor="@color/text_color"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- eMail -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/Details_layout_height"
+            android:layout_marginTop="@dimen/Details_layout_marginTop"
+            android:layout_marginLeft="@dimen/Details_layout_marginLeft"
+            android:layout_marginRight="@dimen/Details_layout_marginRight"
+            android:background="@android:color/background_light"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/customer_eMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/eMail"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/text_color"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <!-- Buttons Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal">
+
+        <!-- Next Button -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/nextBtn"
+                android:layout_width="@dimen/button_layout_width"
+                android:layout_height="@dimen/button_layout_height"
+                android:background="@android:color/holo_red_dark"
+                android:onClick="next_onClick"
+                android:text="@string/nextBtn"
+                android:textSize="@dimen/button_Text_size"></Button>
+        </LinearLayout>
+
+        <!-- Back Button -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="@dimen/button_layout_width"
+                android:layout_height="@dimen/button_layout_height"
+                android:id="@+id/backBtn"
+                android:text="@string/backBtn"
+                android:onClick="back_onClick"
+                android:textSize="@dimen/button_Text_size"
+                android:background="@android:color/background_light">
+            </Button>
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

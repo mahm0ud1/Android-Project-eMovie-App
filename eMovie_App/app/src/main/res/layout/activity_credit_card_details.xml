@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreditCardDetails"
+    android:background="@android:color/darker_gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/toolbar"
+            android:id="@+id/credit_card_toolbar">
+        </include>
+
+
+    <!-- Credit Card Details Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <!-- Credit Card Owner Name -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/Details_layout_height"
+            android:layout_marginTop="@dimen/Details_layout_marginTop"
+            android:layout_marginLeft="@dimen/Details_layout_marginLeft"
+            android:layout_marginRight="@dimen/Details_layout_marginRight"
+            android:background="@android:color/background_light"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/card_owner_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Credit_Full_Name"
+                android:inputType="text"
+                android:textColor="@color/text_color"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Credit Card Number -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/Details_layout_height"
+            android:layout_marginTop="@dimen/Details_layout_marginTop"
+            android:layout_marginLeft="@dimen/Details_layout_marginLeft"
+            android:layout_marginRight="@dimen/Details_layout_marginRight"
+            android:background="@android:color/background_light"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/credit_card_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Credit_Card_Number"
+                android:inputType="number"
+                android:textColor="@color/text_color"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Credit Card expiry date -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/Details_layout_height"
+            android:layout_marginTop="@dimen/Details_layout_marginTop"
+            android:layout_marginLeft="@dimen/Details_layout_marginLeft"
+            android:layout_marginRight="@dimen/Details_layout_marginRight"
+            android:background="@android:color/background_light"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/credit_card_exDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/cCard_exDate"
+                android:digits="0123456789/"
+                android:inputType="date"
+                android:textColor="@color/text_color"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- CVV Number -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/Details_layout_height"
+            android:layout_marginTop="@dimen/Details_layout_marginTop"
+            android:layout_marginLeft="@dimen/Details_layout_marginLeft"
+            android:layout_marginRight="@dimen/Details_layout_marginRight"
+            android:background="@android:color/background_light"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cvvNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/CVV"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textColor="@color/text_color"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <!-- Buttons Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal">
+
+        <!-- Next Button -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/nextBtn"
+                android:layout_width="@dimen/button_layout_width"
+                android:layout_height="@dimen/button_layout_height"
+                android:background="@android:color/holo_red_dark"
+                android:text="@string/nextBtn"
+                android:onClick="next_onClick"
+                android:textSize="@dimen/button_Text_size"></Button>
+        </LinearLayout>
+
+        <!-- Back Button -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="@dimen/button_layout_width"
+                android:layout_height="@dimen/button_layout_height"
+                android:onClick="back_onClick"
+                android:id="@+id/backBtn"
+                android:text="@string/backBtn"
+                android:textSize="@dimen/button_Text_size"
+                android:background="@android:color/background_light">
+            </Button>
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

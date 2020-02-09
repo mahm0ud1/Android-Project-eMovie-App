@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/paidTicket"
+        android:onClick="Show_Paid_Tickets"
+        android:title="@string/Paid_Tickets"
+        android:icon="@drawable/ticket"
+        app:showAsAction="always">
+    </item>
+
+    <item
+        android:id="@+id/filter"
+        android:title="@string/filter"
+        android:icon="@drawable/filter"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/filterTitle"
+                android:title="@string/filter"
+                android:enabled="false"/>
+            <item
+                android:id="@+id/_2D"
+                android:title="2D"
+                android:onClick="Display_Movies"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/_3D"
+                android:title="3D"
+                android:onClick="Display_Movies"
+                app:showAsAction="never"/>
+
+            <item
+                android:id="@+id/_4DX"
+                android:title="4DX"
+                android:onClick="Display_Movies"
+                app:showAsAction="never"/>
+        </menu>
+    </item>
+</menu>

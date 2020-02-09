@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/share"
+        android:title="share"
+        android:icon="@drawable/share"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/share_whatsapp"
+                android:onClick="Share_Whatsapp"
+                android:title="@string/share_whatsapp">
+            </item>
+            <item
+                android:id="@+id/shareaaa"
+                android:onClick="Share"
+                android:title="@string/SMS">
+            </item>
+        </menu>
+    </item>
+</menu>
